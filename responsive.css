@@ -13,6 +13,7 @@ nav .logo{
 }
 .no-hr{
     display: block;
+    width: 100vw;
 }
 .nav-menu{
     padding: 1em;
