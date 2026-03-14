@@ -570,7 +570,7 @@ span {
 }
 
 .skills__img-wrapper {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -585,7 +585,7 @@ span {
 .skills__list {
     color: var(--color-text-primary);
     font-family: var(--font-primary);
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
 }
@@ -704,7 +704,7 @@ span {
 .education__cards-container {
     display: flex;
     justify-content: center;
-    padding: 0 5vw;
+    padding: 0 2vw;
     z-index: 2;
 }
 
@@ -712,7 +712,7 @@ span {
     flex: 1;
     background: var(--color-bg);
     border: 2px solid var(--color-border-primary);
-    padding: 25px 30px;
+    padding: 22px 16px;
     color: var(--color-text-primary);
     font-family: var(--font-primary);
     cursor: pointer;
@@ -745,12 +745,14 @@ span {
 
 .education-module__title {
     font-size: 1.05em;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
 .education-module__detail {
-    font-size: 1.1em;
-    padding: 2px 0;
+    font-size: 0.98em;
+    line-height: 1.35;
+    padding: 3px 0;
 }
 
 /* ==========================================================================
@@ -1566,7 +1568,7 @@ span {
         height: auto;
         min-height: auto;
         box-sizing: border-box;
-        padding: 20px 30px;
+        padding: 20px 16px;
         margin: 0;
         scroll-snap-align: center;
         border: 2px solid var(--color-border-primary);
@@ -1870,6 +1872,12 @@ span {
     overflow: hidden;
 }
 
+.cyber-hero__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .cyber-hero__profile-img {
     display: block;
     width: 100%;
@@ -1960,8 +1968,13 @@ span {
     }
 
     .cyber-hero__headline {
-        font-size: 8vw;
-        margin-bottom: 3vw;
+        font-size: clamp(22px, 6.5vw, 36px);
+        line-height: 1.2;
+        margin-bottom: 6vw;
+    }
+
+    .cyber-hero__headline br {
+        display: none;
     }
 
     .cyber-hero__video-card {
@@ -2001,3 +2014,4 @@ span {
         font-size: 8vw;
     }
 }
+/* 2026-03-14: chore: configure project base variables and directories */
