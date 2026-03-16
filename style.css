@@ -41,3 +41,25 @@ span {
 ::-webkit-scrollbar {
     width: var(--scrollbar-width);
 }
+
+/* Reusable Utility Classes based on BEM concepts */
+.text-accent {
+    color: var(--color-text-accent);
+}
+
+.text-white {
+    color: var(--color-text-primary);
+}
+
+.font-primary {
+    font-family: var(--font-primary);
+}
+
+.font-secondary {
+    font-family: var(--font-secondary);
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.header--sticky {
