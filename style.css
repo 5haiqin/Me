@@ -84,3 +84,25 @@ span {
     justify-items: center;
     /* kept for preservation */
     justify-content: center;
+    padding: 0 0 0 1em;
+}
+
+.nav__logo-img {
+    width: 45px;
+    animation: wave-animation 2.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
