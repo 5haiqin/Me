@@ -127,3 +127,25 @@ span {
     }
 }
 
+.nav__logo-text {
+    color: var(--color-text-primary);
+    font-family: var(--font-secondary);
+    font-size: 2.5em;
+    padding: 10px 0 10px 5px;
+}
+
+.nav__separator--mobile {
+    display: none;
+}
+
+.nav__menu {
+    padding: 1em;
+    list-style: none;
+    /* Emulating the original table behavior */
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    padding: 0;
+}
