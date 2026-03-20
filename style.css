@@ -170,3 +170,25 @@ span {
 .more-icon {
     font-size: 0.7em;
     margin-left: 3px;
+    background-color: transparent;
+}
+
+.nav {
+    position: relative;
+}
+
+.nav__more-popup {
+    position: absolute;
+    top: 100%;
+    right: 1.5em;
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-border-primary);
+    padding: 1.5em;
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 180px;
+    z-index: 100;
+    box-shadow: 6px 6px 0px var(--color-border-primary);
+}
+
