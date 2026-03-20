@@ -192,3 +192,24 @@ span {
     box-shadow: 6px 6px 0px var(--color-border-primary);
 }
 
+.nav__more-popup.active {
+    display: flex;
+}
+
+.more-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.more-item {
+    padding: 0;
+}
+
+.more-link {
+    font-size: 1.4em;
+    font-family: var(--font-secondary);
+    color: var(--color-text-primary);
