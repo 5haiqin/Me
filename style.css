@@ -213,3 +213,25 @@ span {
     font-size: 1.4em;
     font-family: var(--font-secondary);
     color: var(--color-text-primary);
+    text-decoration: none;
+    display: inline-block;
+    transition: color var(--transition-fast);
+}
+
+.more-link:hover {
+    color: var(--color-text-muted);
+}
+
+/* Visibility Utilities for Nav items */
+.nav-desktop-only {
+    display: block;
+}
+
+.nav-mobile-only {
+    display: none;
+}
+
+.more-desktop-only {
+    display: block;
+}
+
