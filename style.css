@@ -235,3 +235,24 @@ span {
     display: block;
 }
 
+.more-mobile-only {
+    display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-desktop-only {
+        display: none !important;
+    }
+
+    .nav-mobile-only {
+        display: block !important;
+    }
+
+    .more-desktop-only {
+        display: none !important;
+    }
+
+    .more-mobile-only {
+        display: block !important;
+    }
