@@ -300,3 +300,24 @@ span {
     justify-content: center;
     color: var(--color-text-primary);
     font-family: var(--font-primary);
+    padding: 4em;
+}
+
+.hero__title {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.hero__subtitle {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.hero__desc {
+    font-size: 1.2em;
+}
+
+/* ==========================================================================
+   Section Variables & The Slider Marquee
+   ========================================================================== */
+@keyframes slide {
