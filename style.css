@@ -278,3 +278,25 @@ span {
         margin-top: 15px;
     }
 }
+
+
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.hero__img {
+    width: 50vw;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
