@@ -386,3 +386,24 @@ span {
 /* ==========================================================================
    Projects Section
    ========================================================================== */
+.project__showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.project__showcase::-webkit-scrollbar {
+    height: var(--scrollbar-width);
+}
+
+.project-card {
+    width: 400px;
+    background: var(--color-bg);
+    border: 1.5px solid var(--color-border-primary);
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
