@@ -343,3 +343,24 @@ span {
 .section__header {
     overflow: hidden;
     color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    white-space: nowrap;
+    position: relative;
+    font-size: 1.3em;
+}
+
+.slider__container {
+    padding: 0.3em 0 0.4em 0;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.section__header:before,
+.section__header:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
