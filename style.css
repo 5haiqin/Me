@@ -364,3 +364,25 @@ span {
     height: 100%;
     content: "";
     z-index: 2;
+}
+
+.section__header:hover .slider__track {
+    animation-play-state: paused;
+}
+
+.slider__track {
+    display: inline-block;
+    flex-shrink: 0;
+    white-space: nowrap;
+    animation: var(--animation-slide-speed) slide infinite linear;
+    padding-right: 15px;
+    /* Ensures consistent gap between cloned tracks */
+}
+
+.slider__track.slider__track--reverse {
+    animation: var(--animation-slide-speed) slide-reverse infinite linear;
+}
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
