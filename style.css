@@ -429,3 +429,24 @@ span {
 
 .info-area {
     border-right: 1.5px solid var(--color-border-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-box {
+    padding: 10px 15px;
+    border-bottom: 1.5px solid var(--color-border-primary);
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+.title span {
+    color: var(--color-text-accent);
+}
+
+.desc-box {
