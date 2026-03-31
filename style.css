@@ -450,3 +450,25 @@ span {
 }
 
 .desc-box {
+    padding: 15px 15px 5px 15px;
+}
+
+.desc-text {
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+}
+
+.btn-row {
+    padding: 10px 15px 15px 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    border: 1.5px solid var(--color-border-primary);
