@@ -493,3 +493,25 @@ span {
 }
 
 .btn:hover {
+    background: var(--color-text-accent);
+    border-color: var(--color-border-accent);
+    color: var(--color-bg);
+}
+
+.sidebar {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg);
+}
+
+.icon-track {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    animation: scrollUp 8s linear infinite;
+    animation-play-state: paused;
