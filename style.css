@@ -536,3 +536,25 @@ span {
     height: 38px;
     border-radius: 4px;
 }
+
+.view-all {
+    text-align: center;
+    /* Converted from center tag */
+}
+
+.view-all__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    font-size: 1.5em;
+}
+
+.view-all__link:hover {
+    border: 2px solid var(--color-border-accent);
+    padding: 10px;
+}
+
+/* ==========================================================================
+   Skills Section
+   ========================================================================== */
+.skills {
