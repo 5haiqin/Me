@@ -580,3 +580,24 @@ span {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.skills__list {
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-box {
+    border: 1.5px solid var(--color-border-primary);
+    margin-bottom: 0.8em;
+}
+
+.skill-box__title {
+    font-size: 1.2em;
+    margin: 5px 10px;
+}
+
+.skill-box__detail {
