@@ -623,3 +623,24 @@ span {
     align-items: center;
     /* Replacement for justify-items */
 }
+
+.about__img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.about__text-wrapper {
+    color: var(--color-text-primary);
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    /* Replacement for justify-self */
+    align-items: center;
+}
+
+.about__text {
+    padding: 1em;
+    font-size: 1.2em;
+    border: 1.5px solid var(--color-border-primary);
+    border-radius: 20px;
+    font-family: var(--font-primary);
