@@ -644,3 +644,25 @@ span {
     border: 1.5px solid var(--color-border-primary);
     border-radius: 20px;
     font-family: var(--font-primary);
+}
+
+/* Desktop prefix "I am a" shown, mobile "A" hidden by default */
+.about__prefix--desktop {
+    display: inline;
+    color: var(--color-text-primary);
+}
+
+.about__prefix--mobile {
+    display: none;
+    color: var(--color-text-primary);
+}
+
+/* ==========================================================================
+   Education Section
+   ========================================================================== */
+.education {
+    margin: 2em 0;
+    display: block;
+}
+
+.education-module {
