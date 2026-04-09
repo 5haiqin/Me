@@ -687,3 +687,25 @@ span {
 .leaflet-marker-icon,
 .leaflet-marker-shadow {
     background-color: transparent !important;
+}
+
+.leaflet-container {
+    background-color: var(--color-bg) !important;
+}
+
+.education__lower-layout {
+    display: block;
+}
+
+.education__sidebar--mobile {
+    display: none;
+}
+
+.education__cards-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+    z-index: 2;
+}
+
+.education-module__card {
