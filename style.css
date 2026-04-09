@@ -666,3 +666,24 @@ span {
 }
 
 .education-module {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.education__map-container {
+    width: 100%;
+    height: 350px;
+    border-bottom: 2px solid var(--color-border-primary);
+    box-sizing: border-box;
+    margin-bottom: -20px;
+    /* pull cards up over map */
+    z-index: 1;
+}
+
+/* Fix global reset interfering with Leaflet markers */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+    background-color: transparent !important;
