@@ -709,3 +709,24 @@ span {
 }
 
 .education-module__card {
+    flex: 1;
+    background: var(--color-bg);
+    border: 2px solid var(--color-border-primary);
+    padding: 25px 30px;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+    margin-left: -2px;
+    /* overlap borders */
+}
+
+.education-module__card:first-child {
+    margin-left: 0;
+}
+
+.education-module__card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-text-accent);
+    z-index: 3;
+}
