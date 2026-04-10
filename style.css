@@ -730,3 +730,25 @@ span {
     border-color: var(--color-text-accent);
     z-index: 3;
 }
+
+.education__swipe-indicator {
+    display: none;
+}
+
+
+.education-module__year {
+    color: var(--color-text-accent);
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education-module__title {
+    font-size: 1.05em;
+    margin-bottom: 8px;
+}
+
+.education-module__detail {
+    font-size: 1.1em;
+    padding: 2px 0;
+}
