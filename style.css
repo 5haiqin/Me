@@ -816,3 +816,25 @@ span {
     margin: 0 auto;
 }
 
+.contact__illustration {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact__img {
+    width: 700px;
+}
+
+.form__label {
+    font-size: 1.5em;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    padding: 1em 0 0.5em 0;
+    display: block;
+    /* To break lines clearly */
+}
+
+.form__input,
+.form__textarea {
+    width: 500px;
+    color: var(--color-text-primary);
