@@ -860,3 +860,24 @@ span {
     display: block;
     margin: 1em auto;
     /* Centers submit mimicking center tag */
+}
+
+.form__submit:hover {
+    color: var(--color-text-accent);
+    border-color: var(--color-border-accent);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer__text {
+    color: var(--color-text-primary);
+    text-align: center;
+    font-family: var(--font-primary);
+    padding: 1em 0 1em 0;
+    font-size: 1.5em;
+}
+
+.footer__text:hover {
+    color: var(--color-text-accent);
+}
