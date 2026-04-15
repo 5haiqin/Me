@@ -838,3 +838,25 @@ span {
 .form__textarea {
     width: 500px;
     color: var(--color-text-primary);
+    border: 1.5px solid var(--color-border-primary);
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: var(--font-primary);
+    box-sizing: border-box;
+    /* Normalizing sizing */
+}
+
+.form__submit {
+    color: var(--color-text-primary);
+    width: 150px;
+    border: 1.5px solid var(--color-border-primary);
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 25px;
+    font-family: var(--font-primary);
+    cursor: pointer;
+    background: transparent;
+    display: block;
+    margin: 1em auto;
+    /* Centers submit mimicking center tag */
