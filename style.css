@@ -881,3 +881,25 @@ span {
 .footer__text:hover {
     color: var(--color-text-accent);
 }
+
+/* ==========================================================================
+   Experience Section
+   ========================================================================== */
+#experience {
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-family: var(--font-primary);
+}
+
+/* Hidden on desktop â€” shown only on mobile via media query */
+.exp__mobile-layout {
+    display: block;
+}
+
+/* Hide sidebar on desktop â€” it only appears on mobile */
+.exp__sidebar--mobile {
+    display: none;
+}
+
+/* On desktop, cards column takes full width */
+.exp__cards-column {
