@@ -903,3 +903,24 @@ span {
 
 /* On desktop, cards column takes full width */
 .exp__cards-column {
+    display: block;
+    width: 100%;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.exp-card {
+    border: 2px solid var(--color-border-primary);
+    padding: 35px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
