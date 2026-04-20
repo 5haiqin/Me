@@ -924,3 +924,25 @@ span {
     display: flex;
     flex-direction: column;
     background: var(--color-bg);
+}
+
+.exp-card:hover {
+    border-color: var(--color-text-accent);
+    box-shadow: 10px 10px 0px var(--color-text-accent);
+    transform: translate(-6px, -6px);
+    z-index: 2;
+}
+
+.card-7 {
+    grid-column: span 7;
+}
+
+.card-5 {
+    grid-column: span 5;
+}
+
+.card-4 {
+    grid-column: span 4;
+}
+
+.card-8 {
