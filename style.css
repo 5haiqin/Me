@@ -946,3 +946,24 @@ span {
 }
 
 .card-8 {
+    grid-column: span 8;
+}
+
+.card-full {
+    grid-column: span 12;
+}
+
+.role {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--color-text-primary);
+}
+
+.company {
+    color: var(--color-text-accent);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: block;
+}
