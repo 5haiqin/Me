@@ -967,3 +967,25 @@ span {
     font-weight: 700;
     display: block;
 }
+
+.feature-list {
+    padding-left: 18px;
+    margin: 0 0 25px 0;
+}
+
+.feature-list li {
+    font-size: 0.85rem;
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    list-style-type: square;
+}
+
+.feature-list li::marker {
+    color: var(--color-text-accent);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
