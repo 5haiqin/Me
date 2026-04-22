@@ -989,3 +989,24 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 0.7rem;
+    border: 1px solid var(--color-border-primary);
+    padding: 3px 8px;
+    color: var(--color-text-primary);
+    background: #111;
+}
+
+.more-detail-btn {
+    text-decoration: none;
