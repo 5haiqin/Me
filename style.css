@@ -1032,3 +1032,24 @@ span {
     position: absolute;
     top: -14px;
     right: 25px;
+    background: var(--color-bg);
+    padding: 0 10px;
+    color: var(--color-text-accent);
+    border: 1px solid var(--color-text-accent);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Achievements Section
+   ========================================================================== */
+#achievements {
+    margin-top: 2em;
+    margin-bottom: 0;
+    font-family: var(--font-primary);
+}
+
+.achievements__layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
