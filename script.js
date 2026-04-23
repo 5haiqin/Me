@@ -12,3 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (track) {
             // Clone the slider track multiple times to create a seamless infinite scrolling effect
             // We use 4 clones to ensure even on ultrawide screens it never runs out of content
+            const clones = [
+                track.cloneNode(true),
+                track.cloneNode(true),
+                track.cloneNode(true),
+                track.cloneNode(true)

@@ -1053,3 +1053,25 @@ span {
     display: flex;
     flex-direction: row;
     width: 100%;
+    border-bottom: none;
+}
+
+.achievements__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: calc(100% - 60px);
+    /* Leave room for #More button */
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid var(--color-border-primary);
+}
+
+.cert-card {
+    border: 2px solid var(--color-border-primary);
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
