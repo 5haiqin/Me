@@ -17,3 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 track.cloneNode(true),
                 track.cloneNode(true),
                 track.cloneNode(true)
+            ];
+            
+            // Alternate the animation direction for every second section
+            if (index % 2 === 0) {
+                track.classList.add('slider__track--reverse');
+                clones.forEach(clone => clone.classList.add('slider__track--reverse'));

@@ -1075,3 +1075,24 @@ span {
     text-decoration: none;
     color: inherit;
     position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cert-card:hover {
+    box-shadow: 6px 6px 0px var(--color-text-accent);
+    transform: translate(-4px, -4px);
+    z-index: 2;
+}
+
+.cert-preview {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #0a0a0a;
+    border-bottom: 2px solid var(--color-border-primary);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
