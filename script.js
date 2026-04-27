@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index % 2 === 0) {
                 track.classList.add('slider__track--reverse');
                 clones.forEach(clone => clone.classList.add('slider__track--reverse'));
+            }
+            
+            // Append the cloned nodes to ensure continuous ticker animation
+            clones.forEach(clone => container.appendChild(clone));
+        }
