@@ -28,3 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Append the cloned nodes to ensure continuous ticker animation
             clones.forEach(clone => container.appendChild(clone));
         }
+    });
+
+    // Cyber Hero Marquee
+    const cyberMarquee = document.getElementById('cyber-marquee');
+    
+    if (cyberMarquee) {

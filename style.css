@@ -1118,3 +1118,24 @@ span {
 }
 
 .cert-overlay span {
+    color: var(--color-bg);
+    background: var(--color-text-accent);
+    padding: 8px 16px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.cert-card:hover .cert-overlay {
+    opacity: 1;
+}
+
+.cert-card:hover .cert-overlay span {
+    transform: translateY(0);
+}
+
+.cert-card:hover .cert-preview img {
+    opacity: 1;
