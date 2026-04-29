@@ -34,3 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cyberMarquee = document.getElementById('cyber-marquee');
     
     if (cyberMarquee) {
+        const clone1 = cyberMarquee.innerHTML;
+        cyberMarquee.innerHTML += clone1 + clone1 + clone1;
+
+        cyberMarquee.animate(
+            [

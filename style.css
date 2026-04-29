@@ -1139,3 +1139,25 @@ span {
 
 .cert-card:hover .cert-preview img {
     opacity: 1;
+    transform: scale(1.05);
+}
+
+.cert-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cert-title {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.4;
+    color: var(--color-text-primary);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cert-title span {
