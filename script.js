@@ -39,3 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cyberMarquee.animate(
             [
+                { transform: 'translateX(0)' },
+                { transform: 'translateX(-50%)' }
+            ],
+            {
+                duration: 20000, // 20 seconds for a full loop
+                iterations: Infinity,
