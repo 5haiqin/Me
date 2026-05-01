@@ -45,3 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 duration: 20000, // 20 seconds for a full loop
                 iterations: Infinity,
+                easing: 'linear'
+            }
+        );
+    }
+
+    // Mobile Project Scroll Observer

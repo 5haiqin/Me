@@ -1183,3 +1183,24 @@ span {
 .achievements__more-btn:hover {
     background: var(--color-text-primary);
     color: var(--color-bg);
+}
+
+.achievements__more-btn span {
+    color: var(--color-text-accent);
+    background-color: transparent;
+}
+
+.achievements__more-btn:hover span {
+    color: var(--color-bg);
+}
+
+/* ==========================================================================
+   Responsive (max-width: 1000px)
+   Integrated from responsive.css
+   ========================================================================== */
+@media(max-width: 1000px) {
+
+    /* Nav Bar */
+    .nav {
+        display: block;
+        justify-items: center;
