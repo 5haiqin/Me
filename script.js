@@ -51,3 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Mobile Project Scroll Observer
+    const viewAllBtn = document.getElementById('mobile-view-all');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    if (viewAllBtn && projectCards.length >= 4) {
+        const fourthCard = projectCards[3]; // 0-indexed, so 3 is the 4th card
