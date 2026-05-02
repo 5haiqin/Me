@@ -62,3 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (entries[0].isIntersecting) {
                     // Reached the 4th card
                     viewAllBtn.innerHTML = '<span>#</span>View all&lt;<span>~</span>&gt;';
+                } else {
+                    // Not at the end, prompt to swipe
+                    viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';
+                }
+            }

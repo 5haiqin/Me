@@ -1247,3 +1247,25 @@ span {
     .hero {
         width: 100vw;
         display: block;
+        justify-items: center;
+    }
+
+    .hero__img {
+        width: 100vw;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 1em;
+        height: 250px;
+    }
+
+    .hero__title {
+        font-size: 2.4em;
+    }
+
+    .hero__subtitle {
+        font-size: 1.8em;
