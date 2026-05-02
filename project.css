@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Project Subpage Specific Styling (project.css)
+   ========================================================================== */
+
+/* Grid and layout for the showcases on project.html */
+.project-list--vertical {
+    overflow: visible;
+    width: 100%;
+}
+
+.project__showcase--vertical {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 2em auto;
+}
+
+/* Ensure all cards are shown (override index.html's rule that hides cards 5+ on mobile) */
+@media (max-width: 1000px) {
+    .project-card:nth-child(n+5) {
+        display: flex !important;
+    }
+}
+
+/* Adjust card dimensions for grid consistency */
+.project-card {
+    margin: 15px;
+    width: 380px;
+    transition: transform var(--transition-fast);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Custom styling for the navbar link hover effect on project page */
+.nav__menu .nav__link {
+    border: 1.5px solid transparent;
+    padding: 6px 12px;
+    transition: all var(--transition-fast);
+    font-size: 1.3em;
+    font-family: var(--font-primary);
+}
+
+.nav__menu .nav__link:hover {
+    color: var(--color-bg);
+    background-color: var(--color-text-accent);
+    border-color: var(--color-border-accent);
+}
+
+/* Responsive adjustments for mobile/tablet */
+@media (max-width: 1000px) {
+    .project__showcase--vertical {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em auto;
+        gap: 25px;
+    }
+
+    .project-card {
+        width: 90vw !important;
+        margin: 10px 0;
+    }
+}
+
+/* 2026-05-02: feat: calculate cyber marquee scroll width dynamically */
