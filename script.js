@@ -56,3 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (viewAllBtn && projectCards.length >= 4) {
         const fourthCard = projectCards[3]; // 0-indexed, so 3 is the 4th card
+        
+        const observer = new IntersectionObserver((entries) => {
+            if (window.innerWidth <= 1000) {
+                if (entries[0].isIntersecting) {
+                    // Reached the 4th card
+                    viewAllBtn.innerHTML = '<span>#</span>View all&lt;<span>~</span>&gt;';

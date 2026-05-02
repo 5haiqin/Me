@@ -1226,3 +1226,24 @@ span {
         padding-right: 0;
     }
 
+    .nav__logo-text {
+        font-size: 2em;
+    }
+
+    .nav__logo-img {
+        width: 35px;
+    }
+
+    .nav__item {
+        padding: 0;
+    }
+
+    .nav__link {
+        padding: 0 0.2em;
+        font-size: 1.1em;
+    }
+
+    /* Home Page / Hero */
+    .hero {
+        width: 100vw;
+        display: block;
