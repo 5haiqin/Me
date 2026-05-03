@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 track.cloneNode(true),
                 track.cloneNode(true)
             ];
-            
+
             // Alternate the animation direction for every second section
             if (index % 2 === 0) {
                 track.classList.add('slider__track--reverse');
                 clones.forEach(clone => clone.classList.add('slider__track--reverse'));
             }
-            
+
             // Append the cloned nodes to ensure continuous ticker animation
             clones.forEach(clone => container.appendChild(clone));
         }
@@ -32,10 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cyber Hero Marquee
     const cyberMarquee = document.getElementById('cyber-marquee');
-    
+
     if (cyberMarquee) {
         const clone1 = cyberMarquee.innerHTML;
         cyberMarquee.innerHTML += clone1 + clone1 + clone1;
+
+        // Dynamically calculate the animation duration to maintain a constant scroll speed
+        // regardless of how many elements are added or deleted in the future.
+        const distance = cyberMarquee.scrollWidth / 2; // Distance translated is 50% of the total duplicated width
+        const pixelsPerSecond = 75; // Increased speed (pixels per second)
+        const duration = distance > 0 ? (distance / pixelsPerSecond) * 1000 : 25000;
 
         cyberMarquee.animate(
             [
@@ -43,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { transform: 'translateX(-50%)' }
             ],
             {
-                duration: 20000, // 20 seconds for a full loop
+                duration: duration,
                 iterations: Infinity,
                 easing: 'linear'
             }
@@ -53,10 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Project Scroll Observer
     const viewAllBtn = document.getElementById('mobile-view-all');
     const projectCards = document.querySelectorAll('.project-card');
-    
+
     if (viewAllBtn && projectCards.length >= 4) {
         const fourthCard = projectCards[3]; // 0-indexed, so 3 is the 4th card
-        
+
         const observer = new IntersectionObserver((entries) => {
             if (window.innerWidth <= 1000) {
                 if (entries[0].isIntersecting) {
@@ -70,20 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }, {
             threshold: 0.5 // Trigger when 50% of the 4th card is visible
         });
-        
+
         observer.observe(fourthCard);
-        
+
         // Handle window resize to reset text if moving from mobile to desktop
         window.addEventListener('resize', () => {
             if (window.innerWidth > 1000) {
                 viewAllBtn.innerHTML = '<span>#</span>View all&lt;<span>~</span>&gt;';
             }
         });
-        
+
         // Trigger initial check in case page loads on mobile size
         if (window.innerWidth <= 1000 && !fourthCard.getBoundingClientRect().width) {
-             // Fallback if not intersecting on load
-             viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';
+            // Fallback if not intersecting on load
+            viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';
         }
     }
 
@@ -95,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize Leaflet map on the first card's coordinates
         const initLat = parseFloat(eduCards[0].getAttribute('data-lat'));
         const initLng = parseFloat(eduCards[0].getAttribute('data-lng'));
-        
+
         const map = L.map('edu-map', {
             zoomControl: false,
             scrollWheelZoom: false,
@@ -114,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             iconAnchor: [16, 32]
         });
 
-        let currentMarker = L.marker([initLat, initLng], {icon: googleIcon}).addTo(map);
+        let currentMarker = L.marker([initLat, initLng], { icon: googleIcon }).addTo(map);
         // Make the initial marker clickable
         currentMarker.on('click', () => {
             window.open(`https://www.google.com/maps/search/?api=1&query=${initLat},${initLng}`, '_blank');
@@ -123,19 +129,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const updateMapLocation = (card) => {
             const lat = parseFloat(card.getAttribute('data-lat'));
             const lng = parseFloat(card.getAttribute('data-lng'));
-            
+
             if (!isNaN(lat) && !isNaN(lng)) {
                 // Smooth fly animation to new coordinates
                 map.flyTo([lat, lng], 18, {
                     animate: true,
                     duration: 2.5 // Increased from 0.5 to allow map tiles to load without showing a black screen
                 });
-                
+
                 if (currentMarker) {
                     map.removeLayer(currentMarker);
                 }
-                currentMarker = L.marker([lat, lng], {icon: googleIcon}).addTo(map);
-                
+                currentMarker = L.marker([lat, lng], { icon: googleIcon }).addTo(map);
+
                 // Make the new marker clickable
                 currentMarker.on('click', () => {
                     window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, '_blank');
@@ -255,3 +261,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// 2026-05-03: feat: animate horizontal ticker with constant speed math
