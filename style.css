@@ -1290,3 +1290,25 @@ span {
         overflow: hidden;
     }
 
+    .project__showcase {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        min-width: max-content;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .project__showcase--vertical {
+        display: block;
+        min-width: unset;
+        overflow-x: hidden;
+    }
+
+    .project__showcase::-webkit-scrollbar {
+        height: var(--scrollbar-width);
+    }
+
+    .project-card {
+        width: 350px;
+        margin-bottom: 0;

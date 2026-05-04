@@ -73,3 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         observer.observe(fourthCard);
         
+        // Handle window resize to reset text if moving from mobile to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1000) {
+                viewAllBtn.innerHTML = '<span>#</span>View all&lt;<span>~</span>&gt;';
+            }
