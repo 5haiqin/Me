@@ -67,3 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';
                 }
             }
+        }, {
+            threshold: 0.5 // Trigger when 50% of the 4th card is visible
+        });
+        
+        observer.observe(fourthCard);
+        

@@ -1269,3 +1269,24 @@ span {
 
     .hero__subtitle {
         font-size: 1.8em;
+    }
+
+    .hero__desc {
+        font-size: 1em;
+        padding: 0 0.5em;
+    }
+
+    .section__header {
+        font-size: 1.3em;
+    }
+
+    /* Project Section */
+    .project-list {
+        /* Retained context from project.html style tag */
+        overflow: auto;
+    }
+
+    .project-list--vertical {
+        overflow: hidden;
+    }
+
