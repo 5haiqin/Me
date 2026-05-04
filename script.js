@@ -78,3 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth > 1000) {
                 viewAllBtn.innerHTML = '<span>#</span>View all&lt;<span>~</span>&gt;';
             }
+        });
+        
+        // Trigger initial check in case page loads on mobile size
+        if (window.innerWidth <= 1000 && !fourthCard.getBoundingClientRect().width) {
+             // Fallback if not intersecting on load
+             viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';

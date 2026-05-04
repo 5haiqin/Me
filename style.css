@@ -1312,3 +1312,24 @@ span {
     .project-card {
         width: 350px;
         margin-bottom: 0;
+        /* Removes the 1em desktop margin that created a huge gap */
+    }
+
+    .project-card:nth-child(n+5) {
+        display: none;
+    }
+
+    .title {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .icon-track {
+        animation-play-state: running !important;
+    }
