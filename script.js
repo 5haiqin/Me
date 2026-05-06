@@ -84,3 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 1000 && !fourthCard.getBoundingClientRect().width) {
              // Fallback if not intersecting on load
              viewAllBtn.innerHTML = '<span>#</span>View all<span>~</span>&gt;';
+        }
+    }
+
+    // Education Map Hover Logic with Leaflet
+    const eduCards = document.querySelectorAll('.education-module__card');

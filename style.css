@@ -1333,3 +1333,25 @@ span {
     .icon-track {
         animation-play-state: running !important;
     }
+
+    .desc-text {
+        -webkit-line-clamp: 4;
+    }
+
+    .project-card--wide {
+        width: 90vw;
+    }
+
+    .project__showcase {
+        margin-bottom: 0;
+    }
+
+    .view-all {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+        /* Symmetric padding so it sits perfectly centered */
+    }
+
+    .view-all__link {
