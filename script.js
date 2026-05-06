@@ -263,3 +263,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 2026-05-03: feat: animate horizontal ticker with constant speed math
+
+// 2026-05-06: feat: add custom map markers on hovered locations
