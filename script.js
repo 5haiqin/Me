@@ -89,3 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Education Map Hover Logic with Leaflet
     const eduCards = document.querySelectorAll('.education-module__card');
+    const mapContainer = document.getElementById('edu-map');
+
+    if (eduCards.length > 0 && mapContainer && typeof L !== 'undefined') {
+        // Initialize Leaflet map on the first card's coordinates
+        const initLat = parseFloat(eduCards[0].getAttribute('data-lat'));
+        const initLng = parseFloat(eduCards[0].getAttribute('data-lng'));
