@@ -100,3 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
             zoomControl: false,
             scrollWheelZoom: false,
             attributionControl: false
+        }).setView([initLat, initLng], 18);
+
+        // Use Google Maps Satellite Imagery
+        L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            maxZoom: 20,
+            attribution: '&copy; Google Maps'

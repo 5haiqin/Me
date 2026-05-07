@@ -1398,3 +1398,24 @@ span {
     }
 
     .about__me {
+        margin: 0;
+        display: block;
+    }
+
+    .about__img {
+        display: none;
+    }
+
+    .about__text-wrapper {
+        width: 92%;
+        margin: 0 4%;
+    }
+
+    .about__text {
+        padding: 1em;
+        font-size: 1.05em;
+        border-radius: 0;
+        border-left: 3px solid var(--color-text-accent);
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
