@@ -95,3 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize Leaflet map on the first card's coordinates
         const initLat = parseFloat(eduCards[0].getAttribute('data-lat'));
         const initLng = parseFloat(eduCards[0].getAttribute('data-lng'));
+        
+        const map = L.map('edu-map', {
+            zoomControl: false,
+            scrollWheelZoom: false,
+            attributionControl: false

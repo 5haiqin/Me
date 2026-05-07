@@ -1376,3 +1376,25 @@ span {
 
     .skills__container {
         margin: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .skills__list,
+    .skills__img-wrapper {
+        width: 100%;
+    }
+
+    .skills__img {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* About Section */
+    .about>.section__header {
+        display: none;
+    }
+
+    .about__me {
