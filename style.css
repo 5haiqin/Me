@@ -1419,3 +1419,25 @@ span {
         border-top: none;
         border-right: none;
         border-bottom: none;
+    }
+
+    /* On mobile: hide "I am a", show capital "A" */
+    .about__prefix--desktop {
+        display: none;
+    }
+
+    .about__prefix--mobile {
+        display: inline;
+    }
+
+    /* Education Section */
+    .education {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* Show the horizontal marquee header for Education on mobile */
+    #education>.section__header {
+        display: block;
+    }
+

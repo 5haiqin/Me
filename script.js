@@ -106,3 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
             maxZoom: 20,
             attribution: '&copy; Google Maps'
+        }).addTo(map);
+
+        const googleIcon = L.icon({
+            iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+            iconSize: [32, 32],
