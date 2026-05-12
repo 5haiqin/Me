@@ -1463,3 +1463,24 @@ span {
         border-right: 1.5px solid var(--color-border-primary);
         position: relative;
         overflow: hidden;
+    }
+
+    .education__sidebar-track {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--color-text-primary);
+        font-family: var(--font-primary);
+        font-weight: normal;
+        font-size: 1.2em;
+        white-space: nowrap;
+        animation: scrollUpEducation 15s linear infinite;
+    }
+
+    .marquee-group {
+        display: flex;

@@ -117,3 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentMarker = L.marker([initLat, initLng], {icon: googleIcon}).addTo(map);
         // Make the initial marker clickable
         currentMarker.on('click', () => {
+            window.open(`https://www.google.com/maps/search/?api=1&query=${initLat},${initLng}`, '_blank');
+        });
+
+        const updateMapLocation = (card) => {
+            const lat = parseFloat(card.getAttribute('data-lat'));
