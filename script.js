@@ -111,3 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const googleIcon = L.icon({
             iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
             iconSize: [32, 32],
+            iconAnchor: [16, 32]
+        });
+
+        let currentMarker = L.marker([initLat, initLng], {icon: googleIcon}).addTo(map);
+        // Make the initial marker clickable
+        currentMarker.on('click', () => {

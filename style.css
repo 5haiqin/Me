@@ -1441,3 +1441,25 @@ span {
         display: block;
     }
 
+    /* Hide the vertical sidebar â€” replaced by the standard horizontal header */
+    .education__sidebar--mobile {
+        display: none !important;
+    }
+
+    .education__lower-layout {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-top: 2px solid var(--color-border-primary);
+        /* No bottom border â€” clean separation handled by next section */
+        border-bottom: none;
+        overflow: hidden;
+    }
+
+    .education__sidebar--mobile {
+        display: block;
+        width: 40px;
+        background: var(--color-bg);
+        border-right: 1.5px solid var(--color-border-primary);
+        position: relative;
+        overflow: hidden;
