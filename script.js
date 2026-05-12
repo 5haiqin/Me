@@ -267,3 +267,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2026-05-06: feat: add custom map markers on hovered locations
 
 // 2026-05-09: feat: build mobile snap intersection observer triggers
+
+// 2026-05-12: style: define wrapping grid layout for project list grid
