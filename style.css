@@ -1506,3 +1506,24 @@ span {
         }
 
         100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    .education__right-column {
+        display: block;
+        width: 100%;
+        flex: 1;
+    }
+
+    .education__cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        overflow-x: scroll;
+        overflow-y: visible;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0 5vw 0 0;

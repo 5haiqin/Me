@@ -128,3 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Smooth fly animation to new coordinates
                 map.flyTo([lat, lng], 18, {
                     animate: true,
+                    duration: 2.5 // Increased from 0.5 to allow map tiles to load without showing a black screen
+                });
+                
+                if (currentMarker) {
+                    map.removeLayer(currentMarker);
