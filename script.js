@@ -122,3 +122,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const updateMapLocation = (card) => {
             const lat = parseFloat(card.getAttribute('data-lat'));
+            const lng = parseFloat(card.getAttribute('data-lng'));
+            
+            if (!isNaN(lat) && !isNaN(lng)) {
+                // Smooth fly animation to new coordinates
+                map.flyTo([lat, lng], 18, {
+                    animate: true,
