@@ -139,3 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Make the new marker clickable
                 currentMarker.on('click', () => {
                     window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, '_blank');
+                });
+            }
+        };
+
+        // Desktop Hover Logic & Mobile Tap/Click Logic

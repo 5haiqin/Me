@@ -1549,3 +1549,24 @@ span {
         /* Standardized size to match others */
         margin: 0;
         padding: 15px 0;
+        /* Symmetric padding */
+        animation: pulse 2s infinite;
+    }
+
+    .education__map-container {
+        margin-bottom: -2px;
+    }
+
+    .education-module__card {
+        display: block;
+        flex: 0 0 85vw;
+        /* Show 85% of card so next one peeks through */
+        min-width: 85vw;
+        max-width: 85vw;
+        height: auto;
+        min-height: auto;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        margin: 0;
+        scroll-snap-align: center;
+        border: 2px solid var(--color-border-primary);
