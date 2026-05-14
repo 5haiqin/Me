@@ -144,3 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Desktop Hover Logic & Mobile Tap/Click Logic
+        eduCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 1000) {
+                    updateMapLocation(card);
+                }
+            });

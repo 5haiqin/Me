@@ -1570,3 +1570,25 @@ span {
         margin: 0;
         scroll-snap-align: center;
         border: 2px solid var(--color-border-primary);
+        border-top: none;
+        border-left: none;
+        /* Remove left border for continuous line */
+        transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+            box-shadow 0.35s ease;
+    }
+
+    /* Completely disable hover animations on mobile for education cards */
+    .education-module__card:hover {
+        transform: none;
+        border-color: var(--color-border-primary);
+        z-index: auto;
+    }
+
+    .education-module__card:first-child {
+        margin-left: 0;
+        border-left: 2px solid var(--color-border-primary);
+        /* Only first card keeps left border */
+    }
+
+    /* Experience Section Mobile â€” vertical sidebar + scrollable cards */
+    #experience {
