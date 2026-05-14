@@ -133,3 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (currentMarker) {
                     map.removeLayer(currentMarker);
+                }
+                currentMarker = L.marker([lat, lng], {icon: googleIcon}).addTo(map);
+                
+                // Make the new marker clickable
+                currentMarker.on('click', () => {
+                    window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, '_blank');

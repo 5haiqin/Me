@@ -1527,3 +1527,25 @@ span {
         scrollbar-width: none;
         -ms-overflow-style: none;
         padding: 0 5vw 0 0;
+        /* Minimal padding for scroll end */
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+        gap: 0;
+        /* Remove gap so cards attach */
+    }
+
+    .education__cards-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .education__swipe-indicator {
+        display: block;
+        text-align: center;
+        color: var(--color-text-primary);
+        font-family: var(--font-primary);
+        font-weight: bold;
+        font-size: 1.1em;
+        /* Standardized size to match others */
+        margin: 0;
+        padding: 15px 0;
