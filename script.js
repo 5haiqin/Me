@@ -150,3 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     updateMapLocation(card);
                 }
             });
+            // Allow users to tap the card on mobile to snap the map back 
+            // if they accidentally scrolled or panned the map away.
+            card.addEventListener('click', () => {
+                if (window.innerWidth <= 1000) {
+                    updateMapLocation(card);
+                }

@@ -1592,3 +1592,24 @@ span {
 
     /* Experience Section Mobile â€” vertical sidebar + scrollable cards */
     #experience {
+        margin-bottom: 0;
+        /* Remove huge black gap below section */
+    }
+
+    #experience>.section__header {
+        display: none;
+    }
+
+    /* Hide the desktop-only exp-grid selector (no longer needed â€” cards are in exp__mobile-layout) */
+    #experience>.exp-grid {
+        display: none;
+    }
+
+    /* Show the mobile layout wrapper as a horizontal flex row */
+    .exp__mobile-layout {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-top: 1px solid var(--color-border-primary);
+        border-bottom: none;
+        /* Removed the unnecessary white line */
