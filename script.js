@@ -269,3 +269,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2026-05-09: feat: build mobile snap intersection observer triggers
 
 // 2026-05-12: style: define wrapping grid layout for project list grid
+
+// 2026-05-15: feat: convert project page cards to standard homepage card style
