@@ -156,3 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth <= 1000) {
                     updateMapLocation(card);
                 }
+            });
+        });
+
+        // Mobile Horizontal Scroll Sync Logic
+        const observerOptions = {

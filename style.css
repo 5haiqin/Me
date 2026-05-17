@@ -1613,3 +1613,25 @@ span {
         border-top: 1px solid var(--color-border-primary);
         border-bottom: none;
         /* Removed the unnecessary white line */
+    }
+
+    /* Show the vertical sidebar */
+    .exp__sidebar--mobile {
+        display: block;
+        width: 40px;
+        background: var(--color-bg);
+        border-right: 1.5px solid var(--color-border-primary);
+        position: relative;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    .exp__sidebar-track {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
