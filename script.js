@@ -271,3 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2026-05-12: style: define wrapping grid layout for project list grid
 
 // 2026-05-15: feat: convert project page cards to standard homepage card style
+
+// 2026-05-18: feat: map bootstrap badges on netflix clone card sidebar
