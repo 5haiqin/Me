@@ -161,3 +161,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Mobile Horizontal Scroll Sync Logic
         const observerOptions = {
+            root: document.querySelector('.education__cards-container'),
+            threshold: 0.6 // Trigger when card is 60% visible
+        };
+
+        const cardObserver = new IntersectionObserver((entries) => {
+            if (window.innerWidth <= 1000) {

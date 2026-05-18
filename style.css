@@ -1635,3 +1635,24 @@ span {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        color: var(--color-text-primary);
+        font-family: var(--font-primary);
+        font-weight: normal;
+        font-size: 1.2em;
+        white-space: nowrap;
+        animation: scrollUpExperience 15s linear infinite;
+    }
+
+    @keyframes scrollUpExperience {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+    /* Cards column next to the sidebar */
+    .exp__cards-column {
+        flex: 1;
