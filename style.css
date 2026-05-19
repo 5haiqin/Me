@@ -1699,3 +1699,25 @@ span {
         font-size: 1.1em;
     }
 
+    .exp-card .company {
+        font-size: 0.9em;
+    }
+
+    .exp-card .feature-list li {
+        font-size: 0.85em;
+        margin-bottom: 5px;
+        line-height: 1.4;
+    }
+
+    /* Achievements Section - 2x2 Grid */
+    .achievements__layout {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .achievements__grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        border-right: none;
+        gap: 15px;
+        padding: 15px;

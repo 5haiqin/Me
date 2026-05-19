@@ -178,3 +178,8 @@ document.addEventListener('DOMContentLoaded', () => {
         eduCards.forEach(card => cardObserver.observe(card));
 
         // Active card highlight: yellow border on the currently snapped card
+        const highlightActiveCard = () => {
+            if (window.innerWidth <= 1000) {
+                const container = document.querySelector('.education__cards-container');
+                if (!container) return;
+                eduCards.forEach(card => card.classList.remove('active'));
