@@ -172,3 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         updateMapLocation(entry.target);
                     }
                 });
+            }
+        }, observerOptions);
+
+        eduCards.forEach(card => cardObserver.observe(card));
+
+        // Active card highlight: yellow border on the currently snapped card

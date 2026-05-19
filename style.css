@@ -1678,3 +1678,24 @@ span {
     .card-5,
     .card-4,
     .card-8 {
+        grid-column: span 12;
+    }
+
+    .exp-card {
+        padding: 15px;
+        /* Reduced padding inside card to save space */
+    }
+
+    /* Disable hover animations on mobile for experience cards */
+    .exp-card:hover {
+        transform: none;
+        border-color: var(--color-border-primary);
+        box-shadow: none;
+        z-index: auto;
+    }
+
+    /* Adjust font sizes inside cards to fit nicely on mobile */
+    .exp-card .role {
+        font-size: 1.1em;
+    }
+
