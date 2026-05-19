@@ -1656,3 +1656,25 @@ span {
     /* Cards column next to the sidebar */
     .exp__cards-column {
         flex: 1;
+        overflow-y: auto;
+        /* Restored scroll feature requested by user */
+        max-height: 95vh;
+        /* Increased height so boxes are properly visible */
+    }
+
+    #experience .exp__cards-column .exp-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        /* Increased gap so the top-floating date badges don't overlap */
+        padding: 30px 15px;
+        padding-bottom: 40px;
+        /* Ensures the last card isn't cut off */
+        margin-top: 0;
+    }
+
+    /* Experience Section Mobile */
+    .card-7,
+    .card-5,
+    .card-4,
+    .card-8 {

@@ -167,3 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cardObserver = new IntersectionObserver((entries) => {
             if (window.innerWidth <= 1000) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        updateMapLocation(entry.target);
+                    }
+                });
