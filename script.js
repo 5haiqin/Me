@@ -183,3 +183,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const container = document.querySelector('.education__cards-container');
                 if (!container) return;
                 eduCards.forEach(card => card.classList.remove('active'));
+                // Find which card is most centered in the scroll container
+                let closest = null;
+                let closestDist = Infinity;
+                const containerCenter = container.scrollLeft + container.offsetWidth / 2;
+                eduCards.forEach(card => {
+                    const cardCenter = card.offsetLeft + card.offsetWidth / 2;
