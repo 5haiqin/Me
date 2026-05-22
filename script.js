@@ -189,3 +189,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const containerCenter = container.scrollLeft + container.offsetWidth / 2;
                 eduCards.forEach(card => {
                     const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+                    const dist = Math.abs(cardCenter - containerCenter);
+                    if (dist < closestDist) {
+                        closestDist = dist;
+                        closest = card;
+                    }

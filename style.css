@@ -1743,3 +1743,24 @@ span {
         animation: pulse 2s infinite;
         /* Add standard pulse */
     }
+
+    .cert-info {
+        padding: 10px;
+    }
+
+    .cert-title {
+        font-size: 0.85rem;
+        -webkit-line-clamp: 3;
+    }
+
+    /* Contact Section */
+    .contact__container {
+        margin: 1em;
+    }
+
+    .contact__header {
+        width: 90%;
+        font-size: 1.22em;
+        margin: 0 auto;
+    }
+
