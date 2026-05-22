@@ -1786,3 +1786,24 @@ span {
         font-size: 1em;
     }
 
+    .form__submit {
+        width: 120px;
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    /* Footer */
+    .footer__text {
+        font-size: 1em;
+    }
+}
+
+/* ==========================================================================
+   Cyber Hero Section
+   ========================================================================== */
+.cyber-hero {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    padding-bottom: 5vw;
+    position: relative;

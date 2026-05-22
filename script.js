@@ -200,3 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const eduContainer = document.querySelector('.education__cards-container');
+        if (eduContainer) {
+            // Set first card active on load
+            if (eduCards[0]) eduCards[0].classList.add('active');
+            eduContainer.addEventListener('scroll', highlightActiveCard, { passive: true });
+            window.addEventListener('resize', highlightActiveCard);
