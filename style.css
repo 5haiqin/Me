@@ -1764,3 +1764,25 @@ span {
         margin: 0 auto;
     }
 
+    .contact__form-wrapper {
+        padding: 0.3em 0;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .contact__img {
+        width: 350px;
+    }
+
+    .form__label {
+        font-size: 1.1em;
+        padding: 0.5em 0;
+    }
+
+    .form__input,
+    .form__textarea {
+        width: 250px;
+        padding: 0.5em;
+        font-size: 1em;
+    }
+

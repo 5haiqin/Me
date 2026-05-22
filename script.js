@@ -194,3 +194,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         closestDist = dist;
                         closest = card;
                     }
+                });
+                if (closest) closest.classList.add('active');
+            }
+        };
+
+        const eduContainer = document.querySelector('.education__cards-container');
