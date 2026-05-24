@@ -275,3 +275,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2026-05-18: feat: map bootstrap badges on netflix clone card sidebar
 
 // 2026-05-21: feat: configure tech logos loop for edcare tutorial card
+
+// 2026-05-24: feat: add vayu setu card inside projects page
