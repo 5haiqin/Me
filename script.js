@@ -216,3 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let hideTimeout;
 
         const openPopup = () => {
+            clearTimeout(hideTimeout);
+            morePopup.classList.add('active');
+        };
+
+        const closePopup = () => {
+            hideTimeout = setTimeout(() => {
