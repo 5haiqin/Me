@@ -211,3 +211,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navigation More Popup Toggle
     const moreBtn = document.getElementById('more-btn');
     const morePopup = document.getElementById('more-popup');
+
+    if (moreBtn && morePopup) {
+        let hideTimeout;
+
+        const openPopup = () => {

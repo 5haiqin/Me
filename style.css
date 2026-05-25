@@ -1829,3 +1829,24 @@ span {
 }
 
 .cyber-hero__headline {
+    font-size: 3.5vw;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    z-index: 5;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
