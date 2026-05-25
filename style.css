@@ -1807,3 +1807,25 @@ span {
     padding: 2vw;
     padding-bottom: 5vw;
     position: relative;
+    z-index: 10;
+    background-color: var(--color-bg);
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.cyber-hero * {
+    background-color: transparent;
+}
+
+/* Top Section containing headline and video card */
+.cyber-hero__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 2vw;
+    position: relative;
+    z-index: 5;
+}
+
+.cyber-hero__headline {

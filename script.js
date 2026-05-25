@@ -205,3 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (eduCards[0]) eduCards[0].classList.add('active');
             eduContainer.addEventListener('scroll', highlightActiveCard, { passive: true });
             window.addEventListener('resize', highlightActiveCard);
+        }
+    }
+
+    // Navigation More Popup Toggle
+    const moreBtn = document.getElementById('more-btn');
+    const morePopup = document.getElementById('more-popup');
