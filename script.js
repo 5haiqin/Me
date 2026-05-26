@@ -222,3 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const closePopup = () => {
             hideTimeout = setTimeout(() => {
+                morePopup.classList.remove('active');
+            }, 300); // 300ms delay to allow cursor to smoothly enter the popup
+        };
+
+        // Hover events

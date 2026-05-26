@@ -1872,3 +1872,24 @@ span {
 
 .cyber-hero__profile-img {
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: inherit;
+    background-color: transparent !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* White Strip (Marquee container) */
+.cyber-hero__strip-container {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.6vw 0;
+    position: relative;
+    margin: 1.5vw -2vw;
+    width: calc(100% + 4vw);
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
