@@ -1893,3 +1893,25 @@ span {
     z-index: 1;
     overflow: hidden;
     display: flex;
+    align-items: center;
+}
+
+.cyber-hero__strip {
+    display: flex;
+    white-space: nowrap;
+    background-color: transparent;
+}
+
+.cyber-hero__strip span {
+    font-size: 1vw;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-right: 15vw;
+    color: #000000;
+    background-color: transparent;
+}
+
+/* Bottom Section */
+.cyber-hero__bottom {
+    position: relative;
+    padding-top: 0;

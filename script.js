@@ -227,3 +227,9 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Hover events
+        moreBtn.addEventListener('mouseenter', openPopup);
+        moreBtn.addEventListener('mouseleave', closePopup);
+        morePopup.addEventListener('mouseenter', openPopup);
+        morePopup.addEventListener('mouseleave', closePopup);
+
+        // Click events
