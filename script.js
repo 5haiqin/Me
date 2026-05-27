@@ -277,3 +277,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // 2026-05-21: feat: configure tech logos loop for edcare tutorial card
 
 // 2026-05-24: feat: add vayu setu card inside projects page
+
+// 2026-05-27: docs: document javascript map logic inside README.md
