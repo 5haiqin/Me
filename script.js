@@ -233,3 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
         morePopup.addEventListener('mouseleave', closePopup);
 
         // Click events
+        moreBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            morePopup.classList.toggle('active');
+        });
