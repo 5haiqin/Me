@@ -238,3 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
             e.stopPropagation();
             morePopup.classList.toggle('active');
         });
+
+        // Close popup when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!moreBtn.contains(e.target) && !morePopup.contains(e.target)) {
+                morePopup.classList.remove('active');
+            }

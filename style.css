@@ -1936,3 +1936,25 @@ span {
     align-items: flex-start;
     margin-left: -1vw;
     /* Tiny optical adjustment for the huge A */
+    font-family: inherit;
+    background-color: transparent !important;
+    padding-bottom: 4vw;
+}
+
+.cyber-hero__massive-text sup {
+    font-size: 6vw;
+    font-weight: 500;
+    margin-top: 1.5vw;
+    letter-spacing: normal;
+    background-color: transparent !important;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 900px) {
+    .cyber-hero {
+        padding: 0.5vw 5vw;
+    }
+
+    .cyber-hero__top {
+        flex-direction: column;
+    }
