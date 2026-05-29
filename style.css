@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -891,12 +891,12 @@ span {
     font-family: var(--font-primary);
 }
 
-/* Hidden on desktop â€” shown only on mobile via media query */
+/* Hidden on desktop — shown only on mobile via media query */
 .exp__mobile-layout {
     display: block;
 }
 
-/* Hide sidebar on desktop â€” it only appears on mobile */
+/* Hide sidebar on desktop — it only appears on mobile */
 .exp__sidebar--mobile {
     display: none;
 }
@@ -1441,7 +1441,7 @@ span {
         display: block;
     }
 
-    /* Hide the vertical sidebar â€” replaced by the standard horizontal header */
+    /* Hide the vertical sidebar — replaced by the standard horizontal header */
     .education__sidebar--mobile {
         display: none !important;
     }
@@ -1451,7 +1451,7 @@ span {
         flex-direction: row;
         width: 100%;
         border-top: 2px solid var(--color-border-primary);
-        /* No bottom border â€” clean separation handled by next section */
+        /* No bottom border — clean separation handled by next section */
         border-bottom: none;
         overflow: hidden;
     }
@@ -1590,7 +1590,7 @@ span {
         /* Only first card keeps left border */
     }
 
-    /* Experience Section Mobile â€” vertical sidebar + scrollable cards */
+    /* Experience Section Mobile — vertical sidebar + scrollable cards */
     #experience {
         margin-bottom: 0;
         /* Remove huge black gap below section */
@@ -1600,7 +1600,7 @@ span {
         display: none;
     }
 
-    /* Hide the desktop-only exp-grid selector (no longer needed â€” cards are in exp__mobile-layout) */
+    /* Hide the desktop-only exp-grid selector (no longer needed — cards are in exp__mobile-layout) */
     #experience>.exp-grid {
         display: none;
     }
@@ -1979,3 +1979,25 @@ span {
         top: auto;
         margin: 0vw -5vw;
         width: calc(100% + 10vw);
+        padding: 3vw 0;
+    }
+
+    .cyber-hero__strip span {
+        font-size: 3vw;
+        margin-right: 10vw;
+    }
+
+    .cyber-hero__bottom {
+        padding-top: 0vw;
+        margin-top: 0;
+    }
+
+    .cyber-hero__massive-text {
+        font-size: 24vw;
+        margin-top: 5vw;
+    }
+
+    .cyber-hero__massive-text sup {
+        font-size: 8vw;
+    }
+}

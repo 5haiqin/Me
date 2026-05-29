@@ -1,4 +1,4 @@
-﻿/**
+/**
  * "Me" Portfolio Scripts
  * Contains shared logic for DOM manipulation and animations.
  */
@@ -249,3 +249,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Close popup when a link inside it is clicked
         const moreLinks = morePopup.querySelectorAll('.more-link');
         moreLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                morePopup.classList.remove('active');
+            });
+        });
+    }
+});
