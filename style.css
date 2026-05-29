@@ -1958,3 +1958,24 @@ span {
     .cyber-hero__top {
         flex-direction: column;
     }
+
+    .cyber-hero__headline {
+        font-size: 8vw;
+        margin-bottom: 3vw;
+    }
+
+    .cyber-hero__video-card {
+        position: relative;
+        right: 0;
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 5vw;
+        z-index: 10;
+        top: 0;
+    }
+
+    .cyber-hero__strip-container {
+        position: relative;
+        top: auto;
+        margin: 0vw -5vw;
+        width: calc(100% + 10vw);

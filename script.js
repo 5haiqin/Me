@@ -244,3 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!moreBtn.contains(e.target) && !morePopup.contains(e.target)) {
                 morePopup.classList.remove('active');
             }
+        });
+
+        // Close popup when a link inside it is clicked
+        const moreLinks = morePopup.querySelectorAll('.more-link');
+        moreLinks.forEach(link => {
