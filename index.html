@@ -57,34 +57,16 @@
                 </li>
                 <!-- Contact (Mobile only in Main) -->
                 <li class="nav__item nav-mobile-only">
+                    <a href="#skills" class="nav__link"><span>#</span>skills</a>
+                </li>
+                <li class="nav__item nav-mobile-only">
                     <a href="#contact" class="nav__link"><span>#</span>contact</a>
                 </li>
-                <!-- More Button -->
-                <li class="nav__item" id="more-btn">
-                    <a href="javascript:void(0)" class="nav__link"><span>#</span>more</a>
+                <!-- Contact (Desktop only — direct link replacing #more) -->
+                <li class="nav__item nav-desktop-only">
+                    <a href="#contact" class="nav__link"><span>#</span>contact</a>
                 </li>
             </ul>
-            <!-- More Popup Menu -->
-            <div class="nav__more-popup" id="more-popup">
-                <ul class="more-menu">
-                    <!-- About (Always in Popup) -->
-                    <li class="more-item">
-                        <a href="#about" class="more-link"><span>#</span>about</a>
-                    </li>
-                    <!-- Skills (Mobile only in Popup) -->
-                    <li class="more-item more-mobile-only">
-                        <a href="#skills" class="more-link"><span>#</span>skills</a>
-                    </li>
-                    <!-- Project (Mobile only in Popup) -->
-                    <li class="more-item more-mobile-only">
-                        <a href="#project" class="more-link"><span>#</span>project</a>
-                    </li>
-                    <!-- Contact (Desktop only in Popup) -->
-                    <li class="more-item more-desktop-only">
-                        <a href="#contact" class="more-link"><span>#</span>contact</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
         <hr>
     </header>
@@ -99,11 +81,7 @@
                 Connect and Execute with<br>
                 Seamless Interaction.
             </h1>
-            <div class="cyber-hero__video-card">
-                <picture class="cyber-hero__picture">
-                    <source media="(max-width: 900px)" srcset="assets/me.svg">
-                    <img src="assets/me_pc.svg" alt="Shaiqin with Laptop" class="cyber-hero__profile-img">
-                </picture>
+            <div class="cyber-hero__video-card" role="img" aria-label="Shaiqin with Laptop">
             </div>
         </div>
 
